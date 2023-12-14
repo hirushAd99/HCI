@@ -1,0 +1,101 @@
+/* Navbar.css */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #4b91e1;
+  color: white;
+  padding: 10px 0;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-button {
+  background-color: #3498db;
+  color: rgb(217, 207, 207);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.navbar-content {
+  color: white;
+  margin-bottom: 10px; /* Adjust the value based on the desired space */
+}
+
+.navbar-logo {
+  float: left;
+  display: block; /* Make sure the image is displayed inline-block */
+  max-width: 5%; /* Set max-width to prevent image overflow */
+  height: auto; /* Maintain image aspect ratio */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Additional styling options */
+.navbar-logo img {
+  border-radius: 5px; /* Add rounded corners */
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2)); /* Add subtle shadow */
+}
+
+/* Optional responsiveness */
+@media only screen and (max-width: 768px) {
+  .navbar-logo {
+    width: 50%; /* Reduce image size on smaller screens */
+  }
+}
+.navbar-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  margin-right: 15px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.navbar-links a:hover {
+  color: #f8f9fa;
+}
+
+.navbar-button {
+  background-color: #69737a;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 170px;
+  height: 40px;
+}
+
+.navbar-button:hover {
+  background-color: #2980b9;
+}
+
+.navbar-button.hidden {
+  display: none;
+}
+
+.navbar-container .navbar-button:not(.hidden) {
+  display: inline-block;
+}
